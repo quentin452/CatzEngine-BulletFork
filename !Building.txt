@@ -1,0 +1,98 @@
+0) Run "Clean.bat"
+1) Run "lib\build_visual_studio_without_pybullet_vr.bat"
+2) Open "lib\build3\vs2010\0_Bullet3Solution.sln"
+3) Allow auto update to latest Platform Toolset
+4) Select Projects "BulletCollision", "BulletDynamics", "LinearMath" and open their Properties
+5) General
+	Output Directory - restore default
+	Intermediate Directory - restore default
+   C/C++
+	General
+		Debug Information Format - None
+	Code Generation
+		Security Check - Disable Security Check (/GS-)
+	Language
+		Enable Run-Time Type Info - Yes
+6) Create new Configuration: "Release Universal"
+   Create new Platforms: Emscripten, x64, ARM
+	For Release Universal ARM/Win32/x64 set:
+		General \ Windows Store App Support = Yes
+		C/C++ \ General \ Consume Windows Runtime Extension = Yes (/ZW)
+		C/C++ \ Code Generation \ Runtime Library = Multi-threaded DLL (/MD)
+	For Release Emscripten, set Platform Toolset "emcc", reset Target Extension, remove all Clang Command Line options
+7) Have to manually edit - C:\Esenthel\ThirdPartyLibs\!CatzEngine_Bullet\lib\build3\vs2010
+	BulletCollision.vcxproj
+	BulletDynamics.vcxproj
+	LinearMath.vcxproj
+	and add:
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+	to <PropertyGroup Label="Globals">
+        and add:
+    <WindowsAppContainer>true</WindowsAppContainer>
+    <AppContainerApplication>true</AppContainerApplication>
+	to: PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Universal|   for Win32 ARM x64
+8) Apply code changes:
+/******************************************************************************/
+In src\BulletDynamics\ConstraintSolver\btConeTwistConstraint.h
+Change
+	const btTransform& getAFrame() const { return m_rbAFrame; };
+	const btTransform& getBFrame() const { return m_rbBFrame; };
+To
+	      btTransform& getAFrame()      { return m_rbAFrame; };
+	      btTransform& getBFrame()      { return m_rbBFrame; };
+	const btTransform& getAFrame()const { return m_rbAFrame; };
+	const btTransform& getBFrame()const { return m_rbBFrame; };
+/******************************************************************************/
+In src\LinearMath\btScalar.h
+Change
+				///#define ATTRIBUTE_ALIGNED16(a) a __attribute__ ((aligned (16)))
+				///#define ATTRIBUTE_ALIGNED64(a) a __attribute__ ((aligned (64)))
+				///#define ATTRIBUTE_ALIGNED128(a) a __attribute__ ((aligned (128)))
+				#define ATTRIBUTE_ALIGNED16(a) a
+				#define ATTRIBUTE_ALIGNED64(a) a
+				#define ATTRIBUTE_ALIGNED128(a) a
+To
+				#define ATTRIBUTE_ALIGNED16(a) a __attribute__ ((aligned (16)))
+				#define ATTRIBUTE_ALIGNED64(a) a __attribute__ ((aligned (64)))
+				#define ATTRIBUTE_ALIGNED128(a) a __attribute__ ((aligned (128)))
+/******************************************************************************/
+9) When building in VS, Select the 3 projects, right click and do "Build Selection"
+10) when building finishes for all platforms/configurations, run:
+	Windows 2) Delete.bat
+	Windows 3) Move.bat
+/******************************************************************************/
+ANDROID
+
+edit "lib\build3\Android\jni\Android.mk", add:
+LOCAL_CFLAGS       += -O3 -fshort-wchar -ffast-math -funsafe-math-optimizations -fomit-frame-pointer
+LOCAL_CPPFLAGS     += -O3 -fshort-wchar -ffast-math -funsafe-math-optimizations -fomit-frame-pointer
+LOCAL_CPP_FEATURES := rtti
+LOCAL_ARM_NEON     := true
+
+edit "lib\build3\Android\jni\Application.mk", replace with:
+APP_PLATFORM := android-18
+APP_STL      := c++_static
+APP_ABI      := armeabi-v7a arm64-v8a x86
+APP_MODULES  := libBullet
+APP_OPTIM    := release
+/******************************************************************************/
+MAC
+
+Use manually generated "Mac/Bullet.xcodeproj", but:
+-remove all old sources
+-manually drag and drop "lib/src/BulletCollision", "lib/src/BulletDynamics", "lib/src/LinearMath" to the project
+/******************************************************************************/
+LINUX
+
+Use manually generated "Linux/", but:
+-remove all old sources
+-manually drag and drop "lib/src/BulletCollision", "lib/src/BulletDynamics", "lib/src/LinearMath" to the project
+
+OR
+
+cd lib/build3
+./premake4_linux64 gmake --double
+cd gmake
+make
+/******************************************************************************/
