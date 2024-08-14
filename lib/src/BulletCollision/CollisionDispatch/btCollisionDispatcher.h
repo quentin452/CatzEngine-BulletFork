@@ -21,9 +21,8 @@ subject to the following restrictions:
 
 #include "BulletCollision/CollisionDispatch/btManifoldResult.h"
 
-#include "../../LinearMath/btAlignedObjectArray.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
-
+#include "LinearMath/btAlignedObjectArray.h"
 
 class btIDebugDraw;
 class btOverlappingPairCache;

@@ -34,15 +34,14 @@ class btDispatcher;
 #include "BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
 
-#include "../../LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btAlignedObjectArray.h"
 
-#include "../../LinearMath/btIDebugDraw.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
 #include "BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h"
 #include "BulletCollision/CollisionShapes/btCompoundShape.h"
 #include "BulletCollision/CollisionShapes/btStaticPlaneShape.h"
+#include "LinearMath/btIDebugDraw.h"
 #include "btGImpactShape.h"
-
 
 //! Collision Algorithm for GImpact Shapes
 /*!

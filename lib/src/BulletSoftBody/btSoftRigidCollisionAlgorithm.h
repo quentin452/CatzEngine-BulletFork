@@ -23,7 +23,7 @@ subject to the following restrictions:
 class btPersistentManifold;
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
 
-#include "../../LinearMath/btVector3.h"
+#include "LinearMath/btVector3.h"
 class btSoftBody;
 
 /// btSoftRigidCollisionAlgorithm  provides collision detection between btSoftBody and btRigidBody

@@ -34,7 +34,7 @@ extern btScalar gDbvtMargin;
 
 #if DBVT_BP_PROFILE
 #define DBVT_BP_PROFILING_RATE 256
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 #endif
 
 //

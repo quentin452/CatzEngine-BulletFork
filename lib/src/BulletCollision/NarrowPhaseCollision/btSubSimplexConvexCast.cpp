@@ -16,11 +16,10 @@ subject to the following restrictions:
 #include "btSubSimplexConvexCast.h"
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
 
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletCollision/CollisionShapes/btMinkowskiSumShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h"
+#include "LinearMath/btTransformUtil.h"
 #include "btPointCollector.h"
-
 
 btSubsimplexConvexCast::btSubsimplexConvexCast(const btConvexShape *convexA, const btConvexShape *convexB, btSimplexSolverInterface *simplexSolver)
     : m_simplexSolver(simplexSolver),

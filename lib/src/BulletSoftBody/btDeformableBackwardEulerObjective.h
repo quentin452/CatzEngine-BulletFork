@@ -16,7 +16,7 @@
 #ifndef BT_BACKWARD_EULER_OBJECTIVE_H
 #define BT_BACKWARD_EULER_OBJECTIVE_H
 // #include "btConjugateGradient.h"
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 #include "btDeformableContactProjection.h"
 #include "btDeformableCorotatedForce.h"
 #include "btDeformableGravityForce.h"
@@ -27,7 +27,6 @@
 #include "btDeformableMultiBodyDynamicsWorld.h"
 #include "btDeformableNeoHookeanForce.h"
 #include "btPreconditioner.h"
-
 
 class btDeformableBackwardEulerObjective {
   public:

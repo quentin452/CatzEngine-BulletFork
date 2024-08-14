@@ -14,18 +14,17 @@ subject to the following restrictions:
 */
 
 #include "btSimulationIslandManagerMt.h"
-#include "../../LinearMath/btScalar.h"
-#include "../../LinearMath/btThreads.h"
 #include "BulletCollision/BroadphaseCollision/btDispatcher.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionDispatch/btCollisionWorld.h"
 #include "BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
 #include "BulletDynamics/ConstraintSolver/btSequentialImpulseConstraintSolverMt.h" // for s_minimumContactManifoldsForBatching
 #include "BulletDynamics/ConstraintSolver/btTypedConstraint.h"
-
+#include "LinearMath/btScalar.h"
+#include "LinearMath/btThreads.h"
 
 // #include <stdio.h>
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 
 SIMD_FORCE_INLINE int calcBatchCost(int bodies, int manifolds, int constraints) {
     // rough estimate of the cost of a batch, used for merging

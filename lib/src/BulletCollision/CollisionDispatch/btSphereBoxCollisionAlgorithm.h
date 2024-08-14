@@ -23,7 +23,7 @@ subject to the following restrictions:
 class btPersistentManifold;
 #include "btCollisionDispatcher.h"
 
-#include "../../LinearMath/btVector3.h"
+#include "LinearMath/btVector3.h"
 
 /// btSphereBoxCollisionAlgorithm  provides sphere-box collision detection.
 /// Other features are frame-coherency (persistent data) and collision response.

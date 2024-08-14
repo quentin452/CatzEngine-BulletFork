@@ -16,12 +16,11 @@ subject to the following restrictions:
 /// This file was written by Erwin Coumans
 
 #include "btMultiBodySphericalJointMotor.h"
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h"
+#include "LinearMath/btTransformUtil.h"
 #include "btMultiBody.h"
 #include "btMultiBodyLinkCollider.h"
-
 
 btMultiBodySphericalJointMotor::btMultiBodySphericalJointMotor(btMultiBody *body, int link, btScalar maxMotorImpulse)
     : btMultiBodyConstraint(body, body, link, body->getLink(link).m_parent, 3, true, MULTIBODY_CONSTRAINT_SPHERICAL_MOTOR),

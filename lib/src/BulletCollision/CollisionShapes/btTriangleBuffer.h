@@ -16,9 +16,8 @@ subject to the following restrictions:
 #ifndef BT_TRIANGLE_BUFFER_H
 #define BT_TRIANGLE_BUFFER_H
 
-#include "../../LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btAlignedObjectArray.h"
 #include "btTriangleCallback.h"
-
 
 struct btTriangle {
     btVector3 m_vertex0;

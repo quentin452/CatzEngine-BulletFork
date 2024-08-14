@@ -34,11 +34,12 @@ The algorithm also closely resembles the one in http://physbam.stanford.edu/~fed
  */
 
 #include "btDeformableMultiBodyDynamicsWorld.h"
-#include "../../LinearMath/btQuickprof.h"
 #include "DeformableBodyInplaceSolverIslandCallback.h"
+#include "LinearMath/btQuickprof.h"
 #include "btDeformableBodySolver.h"
 #include "btSoftBodyInternals.h"
 #include <stdio.h>
+
 
 btDeformableMultiBodyDynamicsWorld::btDeformableMultiBodyDynamicsWorld(btDispatcher *dispatcher, btBroadphaseInterface *pairCache, btDeformableMultiBodyConstraintSolver *constraintSolver, btCollisionConfiguration *collisionConfiguration, btDeformableBodySolver *deformableBodySolver)
     : btMultiBodyDynamicsWorld(dispatcher, pairCache, (btMultiBodyConstraintSolver *)constraintSolver, collisionConfiguration),

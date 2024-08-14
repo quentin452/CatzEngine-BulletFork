@@ -16,8 +16,8 @@ subject to the following restrictions:
 #ifndef BT_MULTIBODY_CONSTRAINT_H
 #define BT_MULTIBODY_CONSTRAINT_H
 
-#include "../../LinearMath/btAlignedObjectArray.h"
-#include "../../LinearMath/btScalar.h"
+#include "LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btScalar.h"
 #include "btMultiBody.h"
 
 // Don't change any of the existing enum values, so add enum types at the end for serialization compatibility

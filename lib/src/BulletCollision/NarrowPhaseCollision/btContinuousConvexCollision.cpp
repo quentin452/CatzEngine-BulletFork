@@ -14,16 +14,14 @@ subject to the following restrictions:
 */
 
 #include "btContinuousConvexCollision.h"
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
 #include "BulletCollision/CollisionShapes/btSphereShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btSimplexSolverInterface.h"
-
+#include "LinearMath/btTransformUtil.h"
 
 #include "BulletCollision/CollisionShapes/btStaticPlaneShape.h"
 #include "btGjkPairDetector.h"
 #include "btPointCollector.h"
-
 
 btContinuousConvexCollision::btContinuousConvexCollision(const btConvexShape *convexA, const btConvexShape *convexB, btSimplexSolverInterface *simplexSolver, btConvexPenetrationDepthSolver *penetrationDepthSolver)
     : m_simplexSolver(simplexSolver),

@@ -16,10 +16,9 @@ subject to the following restrictions:
 #ifndef BT_HINGE2_CONSTRAINT_H
 #define BT_HINGE2_CONSTRAINT_H
 
-#include "../../LinearMath/btVector3.h"
+#include "LinearMath/btVector3.h"
 #include "btGeneric6DofSpring2Constraint.h"
 #include "btTypedConstraint.h"
-
 
 // Constraint similar to ODE Hinge2 Joint
 // has 3 degrees of frredom:

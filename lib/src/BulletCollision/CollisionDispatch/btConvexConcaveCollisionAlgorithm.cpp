@@ -14,8 +14,6 @@ subject to the following restrictions:
 */
 
 #include "btConvexConcaveCollisionAlgorithm.h"
-#include "../../LinearMath/btIDebugDraw.h"
-#include "../../LinearMath/btQuickprof.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseProxy.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
@@ -27,7 +25,8 @@ subject to the following restrictions:
 #include "BulletCollision/CollisionShapes/btTriangleShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btRaycastCallback.h"
 #include "BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
-
+#include "LinearMath/btIDebugDraw.h"
+#include "LinearMath/btQuickprof.h"
 
 btConvexConcaveCollisionAlgorithm::btConvexConcaveCollisionAlgorithm(const btCollisionAlgorithmConstructionInfo &ci, const btCollisionObjectWrapper *body0Wrap, const btCollisionObjectWrapper *body1Wrap, bool isSwapped)
     : btActivatingCollisionAlgorithm(ci, body0Wrap, body1Wrap),

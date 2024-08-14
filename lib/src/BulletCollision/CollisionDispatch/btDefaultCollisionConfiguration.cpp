@@ -21,7 +21,6 @@ subject to the following restrictions:
 #include "BulletCollision/CollisionDispatch/btConvexConvexAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btEmptyCollisionAlgorithm.h"
 
-
 #include "BulletCollision/CollisionDispatch/btBoxBoxCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btConvexPlaneCollisionAlgorithm.h"
 #include "BulletCollision/CollisionDispatch/btSphereSphereCollisionAlgorithm.h"
@@ -34,7 +33,7 @@ subject to the following restrictions:
 #include "BulletCollision/NarrowPhaseCollision/btMinkowskiPenetrationDepthSolver.h"
 #include "BulletCollision/NarrowPhaseCollision/btVoronoiSimplexSolver.h"
 
-#include "../../LinearMath/btPoolAllocator.h"
+#include "LinearMath/btPoolAllocator.h"
 
 btDefaultCollisionConfiguration::btDefaultCollisionConfiguration(const btDefaultCollisionConstructionInfo &constructionInfo)
 // btDefaultCollisionConfiguration::btDefaultCollisionConfiguration(btStackAlloc*	stackAlloc,btPoolAllocator*	persistentManifoldPool,btPoolAllocator*	collisionAlgorithmPool)

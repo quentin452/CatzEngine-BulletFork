@@ -16,9 +16,8 @@
 #ifndef BT_COROTATED_H
 #define BT_COROTATED_H
 
-#include "../../LinearMath/btPolarDecomposition.h"
+#include "LinearMath/btPolarDecomposition.h"
 #include "btDeformableLagrangianForce.h"
-
 
 static inline int PolarDecomposition(const btMatrix3x3 &m, btMatrix3x3 &q, btMatrix3x3 &s) {
     static const btPolarDecomposition polar;

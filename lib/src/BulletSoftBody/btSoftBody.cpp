@@ -14,17 +14,18 @@ subject to the following restrictions:
 */
 /// btSoftBody implementation by Nathanael Presson
 
-#include "../../LinearMath/btAlignedAllocator.h"
-#include "../../LinearMath/btImplicitQRSVD.h"
-#include "../../LinearMath/btSerializer.h"
 #include "BulletCollision/CollisionShapes/btTriangleShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btGjkEpa2.h"
 #include "BulletDynamics/Featherstone/btMultiBodyConstraint.h"
 #include "BulletDynamics/Featherstone/btMultiBodyLinkCollider.h"
 #include "BulletSoftBody/btSoftBodySolvers.h"
+#include "LinearMath/btAlignedAllocator.h"
+#include "LinearMath/btImplicitQRSVD.h"
+#include "LinearMath/btSerializer.h"
 #include "btSoftBodyData.h"
 #include "btSoftBodyInternals.h"
 #include <iostream>
+
 
 //
 static inline btDbvtNode *buildTreeBottomUp(btAlignedObjectArray<btDbvtNode *> &leafNodes, btAlignedObjectArray<btAlignedObjectArray<int>> &adj) {

@@ -14,10 +14,9 @@ subject to the following restrictions:
 */
 
 #include "btGhostObject.h"
-#include "../../LinearMath/btAabbUtil2.h"
 #include "BulletCollision/CollisionShapes/btConvexShape.h"
+#include "LinearMath/btAabbUtil2.h"
 #include "btCollisionWorld.h"
-
 
 btGhostObject::btGhostObject() {
     m_internalType = CO_GHOST_OBJECT;
@@ -86,7 +85,6 @@ void btPairCachingGhostObject::removeOverlappingObjectInternal(btBroadphaseProxy
 }
 
 void btGhostObject::convexSweepTest(const btConvexShape *castShape, const btTransform &convexFromWorld, const btTransform &convexToWorld, btCollisionWorld::ConvexResultCallback &resultCallback, btScalar allowedCcdPenetration) const {
-      return;
     btTransform convexFromTrans, convexToTrans;
     convexFromTrans = convexFromWorld;
     convexToTrans = convexToWorld;

@@ -3,13 +3,12 @@
 #include "BulletCollision/CollisionShapes/btBvhTriangleMeshShape.h"
 #include "BulletCollision/CollisionShapes/btHeightfieldTerrainShape.h"
 
-#include "../../LinearMath/btIDebugDraw.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
 #include "BulletCollision/CollisionShapes/btScaledBvhTriangleMeshShape.h"
 #include "BulletCollision/CollisionShapes/btTriangleShape.h"
 #include "BulletCollision/NarrowPhaseCollision/btManifoldPoint.h"
-
+#include "LinearMath/btIDebugDraw.h"
 
 // #define DEBUG_INTERNAL_EDGE
 

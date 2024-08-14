@@ -13,7 +13,7 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
-#include "../../LinearMath/btSerializer.h"
+#include "LinearMath/btSerializer.h"
 
 /*
   Make sure this dummy function never changes so that it

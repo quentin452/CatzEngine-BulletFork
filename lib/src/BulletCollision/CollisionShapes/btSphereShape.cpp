@@ -16,7 +16,7 @@ subject to the following restrictions:
 #include "btSphereShape.h"
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
 
-#include "../../LinearMath/btQuaternion.h"
+#include "LinearMath/btQuaternion.h"
 
 btVector3 btSphereShape::localGetSupportingVertexWithoutMargin(const btVector3 &vec) const {
     (void)vec;

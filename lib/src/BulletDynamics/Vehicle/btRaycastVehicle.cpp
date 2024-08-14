@@ -10,19 +10,17 @@
  */
 
 #include "btRaycastVehicle.h"
-#include "../../LinearMath/btVector3.h"
+#include "LinearMath/btVector3.h"
 
-
-#include "../../LinearMath/btIDebugDraw.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../LinearMath/btQuaternion.h"
 #include "BulletDynamics/ConstraintSolver/btContactConstraint.h"
 #include "BulletDynamics/ConstraintSolver/btJacobianEntry.h"
 #include "BulletDynamics/ConstraintSolver/btSolve2LinearConstraint.h"
 #include "BulletDynamics/Dynamics/btDynamicsWorld.h"
+#include "LinearMath/btIDebugDraw.h"
+#include "LinearMath/btMinMax.h"
+#include "LinearMath/btQuaternion.h"
 #include "btVehicleRaycaster.h"
 #include "btWheelInfo.h"
-
 
 #define ROLLING_INFLUENCE_FIX
 

@@ -16,11 +16,10 @@ subject to the following restrictions:
 /// This file was written by Erwin Coumans
 
 #include "btMultiBodySliderConstraint.h"
-#include "../../LinearMath/btIDebugDraw.h"
 #include "BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#include "LinearMath/btIDebugDraw.h"
 #include "btMultiBodyLinkCollider.h"
-
 
 #define BTMBSLIDERCONSTRAINT_DIM 5
 #define EPSILON 0.000001

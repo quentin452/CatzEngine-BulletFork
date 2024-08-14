@@ -14,7 +14,7 @@
  */
 
 #include "btDeformableBodySolver.h"
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 #include "btSoftBodyInternals.h"
 #include <limits>
 #include <stdio.h>

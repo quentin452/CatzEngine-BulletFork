@@ -17,12 +17,11 @@ subject to the following restrictions:
 #endif
 
 #include "BulletCollision/CollisionShapes/btPolyhedralConvexShape.h"
-#include "../../LinearMath/btConvexHullComputer.h"
-#include "../../LinearMath/btGeometryUtil.h"
-#include "../../LinearMath/btGrahamScan2dConvexHull.h"
+#include "LinearMath/btConvexHullComputer.h"
+#include "LinearMath/btGeometryUtil.h"
+#include "LinearMath/btGrahamScan2dConvexHull.h"
 #include "btConvexPolyhedron.h"
 #include <new>
-
 
 btPolyhedralConvexShape::btPolyhedralConvexShape() : btConvexInternalShape(),
                                                      m_polyhedron(0) {

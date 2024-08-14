@@ -15,16 +15,15 @@
 
 #ifndef BT_CONTACT_PROJECTION_H
 #define BT_CONTACT_PROJECTION_H
-#include "../../LinearMath/btHashMap.h"
-#include "../../LinearMath/btModifiedGramSchmidt.h"
-#include "../../LinearMath/btReducedVector.h"
 #include "BulletDynamics/Featherstone/btMultiBodyConstraint.h"
 #include "BulletDynamics/Featherstone/btMultiBodyLinkCollider.h"
+#include "LinearMath/btHashMap.h"
+#include "LinearMath/btModifiedGramSchmidt.h"
+#include "LinearMath/btReducedVector.h"
 #include "btCGProjection.h"
 #include "btDeformableContactConstraint.h"
 #include "btSoftBody.h"
 #include <vector>
-
 
 struct LagrangeMultiplier {
     int m_num_constraints; // Number of constraints

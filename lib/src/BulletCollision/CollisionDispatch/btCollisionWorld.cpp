@@ -14,9 +14,6 @@ subject to the following restrictions:
 */
 
 #include "btCollisionWorld.h"
-#include "../../LinearMath/btAabbUtil2.h"
-#include "../../LinearMath/btQuickprof.h"
-#include "../../LinearMath/btSerializer.h"
 #include "BulletCollision/BroadphaseCollision/btBroadphaseInterface.h"
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
 #include "BulletCollision/BroadphaseCollision/btDbvt.h"
@@ -35,8 +32,10 @@ subject to the following restrictions:
 #include "BulletCollision/NarrowPhaseCollision/btGjkEpaPenetrationDepthSolver.h"
 #include "BulletCollision/NarrowPhaseCollision/btRaycastCallback.h"
 #include "BulletCollision/NarrowPhaseCollision/btSubSimplexConvexCast.h"
+#include "LinearMath/btAabbUtil2.h"
+#include "LinearMath/btQuickprof.h"
+#include "LinearMath/btSerializer.h"
 #include "btCollisionDispatcher.h"
-
 
 // #define DISABLE_DBVT_COMPOUNDSHAPE_RAYCAST_ACCELERATION
 
@@ -48,7 +47,6 @@ subject to the following restrictions:
 #include "BulletCollision/BroadphaseCollision/btSimpleBroadphase.h"
 #include "BulletCollision/CollisionDispatch/btCollisionConfiguration.h"
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
-
 
 /// for debug drawing
 
@@ -65,7 +63,6 @@ subject to the following restrictions:
 #include "BulletCollision/CollisionShapes/btStaticPlaneShape.h"
 #include "BulletCollision/CollisionShapes/btTriangleCallback.h"
 #include "BulletCollision/CollisionShapes/btTriangleMeshShape.h"
-
 
 btCollisionWorld::btCollisionWorld(btDispatcher *dispatcher, btBroadphaseInterface *pairCache, btCollisionConfiguration *collisionConfiguration)
     : m_dispatcher1(dispatcher),
@@ -963,6 +960,7 @@ struct btSingleSweepCallback : public btBroadphaseRayCallback {
 };
 
 void btCollisionWorld::convexSweepTest(const btConvexShape *castShape, const btTransform &convexFromWorld, const btTransform &convexToWorld, ConvexResultCallback &resultCallback, btScalar allowedCcdPenetration) const {
+    return;
     BT_PROFILE("convexSweepTest");
     /// use the broadphase to accelerate the search for objects, based on their aabb
     /// and for each object with ray-aabb overlap, perform an exact ray test

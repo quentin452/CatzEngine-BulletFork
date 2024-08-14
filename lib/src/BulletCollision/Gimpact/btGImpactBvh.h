@@ -24,12 +24,11 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
-#include "../../LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btAlignedObjectArray.h"
 
 #include "btBoxCollision.h"
 #include "btGImpactBvhStructs.h"
 #include "btTriangleShapeEx.h"
-
 
 //! A pairset array
 class btPairSet : public btAlignedObjectArray<GIM_PAIR> {

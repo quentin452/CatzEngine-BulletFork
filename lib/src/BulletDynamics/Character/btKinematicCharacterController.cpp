@@ -14,15 +14,14 @@ subject to the following restrictions:
 */
 
 #include "btKinematicCharacterController.h"
-#include "../../LinearMath/btDefaultMotionState.h"
-#include "../../LinearMath/btIDebugDraw.h"
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
 #include "BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
 #include "BulletCollision/CollisionDispatch/btCollisionWorld.h"
 #include "BulletCollision/CollisionDispatch/btGhostObject.h"
 #include "BulletCollision/CollisionShapes/btMultiSphereShape.h"
+#include "LinearMath/btDefaultMotionState.h"
+#include "LinearMath/btIDebugDraw.h"
 #include <stdio.h>
-
 
 // static helper method
 static btVector3

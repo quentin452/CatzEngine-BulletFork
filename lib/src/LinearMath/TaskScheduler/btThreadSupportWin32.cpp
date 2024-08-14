@@ -15,14 +15,13 @@ subject to the following restrictions:
 
 #if defined(_WIN32) && BT_THREADSAFE
 
-#include "../../LinearMath/btAlignedObjectArray.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../LinearMath/btScalar.h"
-#include "../../LinearMath/btThreads.h"
+#include "LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btMinMax.h"
+#include "LinearMath/btScalar.h"
+#include "LinearMath/btThreads.h"
 #include "btThreadSupportInterface.h"
 #include <stdio.h>
 #include <windows.h>
-
 
 struct btProcessorInfo {
     int numLogicalProcessors;

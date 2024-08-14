@@ -1,7 +1,6 @@
 #include "btSdfCollisionShape.h"
-#include "../../LinearMath/btAabbUtil2.h"
+#include "LinearMath/btAabbUtil2.h"
 #include "btMiniSDF.h"
-
 
 struct btSdfCollisionShapeInternalData {
     btVector3 m_localScaling;

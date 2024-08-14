@@ -24,13 +24,12 @@ Concave-Concave Collision
 */
 
 #include "btGImpactCollisionAlgorithm.h"
-#include "../../LinearMath/btIDebugDraw.h"
-#include "../../LinearMath/btQuickprof.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionDispatch/btManifoldResult.h"
 #include "BulletCollision/CollisionShapes/btBoxShape.h"
+#include "LinearMath/btIDebugDraw.h"
+#include "LinearMath/btQuickprof.h"
 #include "btContactProcessing.h"
-
 
 //! Class for accessing the plane equation
 class btPlaneShape : public btStaticPlaneShape {

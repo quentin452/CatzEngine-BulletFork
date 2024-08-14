@@ -15,14 +15,13 @@
 
 #ifndef BT_KRYLOV_SOLVER_H
 #define BT_KRYLOV_SOLVER_H
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 #include <LinearMath/btAlignedObjectArray.h>
 #include <LinearMath/btScalar.h>
 #include <LinearMath/btVector3.h>
 #include <cmath>
 #include <iostream>
 #include <limits>
-
 
 template <class MatrixX>
 class btKrylovSolver {

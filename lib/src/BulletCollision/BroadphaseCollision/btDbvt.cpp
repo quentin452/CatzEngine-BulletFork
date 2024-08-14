@@ -602,10 +602,9 @@ void btDbvt::extractLeaves(const btDbvtNode *node, btAlignedObjectArray<const bt
 //
 #if DBVT_ENABLE_BENCHMARK
 
-#include "../../LinearMath/btQuickProf.h"
+#include "LinearMath/btQuickProf.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 
 /*
 q6600,2.4ghz

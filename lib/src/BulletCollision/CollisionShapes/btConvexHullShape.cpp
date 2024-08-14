@@ -20,11 +20,10 @@ subject to the following restrictions:
 #include "btConvexHullShape.h"
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
 
-#include "../../LinearMath/btConvexHullComputer.h"
-#include "../../LinearMath/btQuaternion.h"
-#include "../../LinearMath/btSerializer.h"
+#include "LinearMath/btConvexHullComputer.h"
+#include "LinearMath/btQuaternion.h"
+#include "LinearMath/btSerializer.h"
 #include "btConvexPolyhedron.h"
-
 
 btConvexHullShape ::btConvexHullShape(const btScalar *points, int numPoints, int stride) : btPolyhedralConvexAabbCachingShape() {
     m_shapeType = CONVEX_HULL_SHAPE_PROXYTYPE;

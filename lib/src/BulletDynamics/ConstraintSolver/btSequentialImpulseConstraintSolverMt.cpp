@@ -15,7 +15,7 @@ subject to the following restrictions:
 
 #include "btSequentialImpulseConstraintSolverMt.h"
 
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 
 #include "BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
 

@@ -15,8 +15,8 @@ subject to the following restrictions:
 /// btSoftBodyHelpers.cpp by Nathanael Presson
 
 #include "btSoftBodyHelpers.h"
-#include "../../LinearMath/btConvexHull.h"
-#include "../../LinearMath/btConvexHullComputer.h"
+#include "LinearMath/btConvexHull.h"
+#include "LinearMath/btConvexHullComputer.h"
 #include "btSoftBodyInternals.h"
 #include <algorithm>
 #include <iostream>
@@ -26,7 +26,6 @@ subject to the following restrictions:
 #include <string.h>
 #include <string>
 #include <vector>
-
 
 static void drawVertex(btIDebugDraw *idraw,
                        const btVector3 &x, btScalar s, const btVector3 &c) {

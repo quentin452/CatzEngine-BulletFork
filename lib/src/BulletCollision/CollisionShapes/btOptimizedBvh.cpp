@@ -14,10 +14,9 @@ subject to the following restrictions:
 */
 
 #include "btOptimizedBvh.h"
-#include "../../LinearMath/btAabbUtil2.h"
-#include "../../LinearMath/btIDebugDraw.h"
+#include "LinearMath/btAabbUtil2.h"
+#include "LinearMath/btIDebugDraw.h"
 #include "btStridingMeshInterface.h"
-
 
 btOptimizedBvh::btOptimizedBvh() {
 }

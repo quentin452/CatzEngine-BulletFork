@@ -28,7 +28,7 @@ class btDispatcher;
 class btSoftBody;
 class btCollisionShape;
 
-#include "../../LinearMath/btHashMap.h"
+#include "LinearMath/btHashMap.h"
 
 #include "BulletCollision/BroadphaseCollision/btQuantizedBvh.h" //for definition of MAX_NUM_PARTS_IN_BITS
 

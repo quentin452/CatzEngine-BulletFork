@@ -21,11 +21,9 @@ subject to the following restrictions:
 #include "BulletDynamics/ConstraintSolver/btSolverBody.h"
 #include "btMultiBodyConstraint.h"
 
-
-#include "../../LinearMath/btQuickprof.h"
-#include "../../LinearMath/btScalar.h"
 #include "BulletDynamics/Featherstone/btMultiBodySolverConstraint.h"
-
+#include "LinearMath/btQuickprof.h"
+#include "LinearMath/btScalar.h"
 
 btScalar btMultiBodyConstraintSolver::solveSingleIteration(int iteration, btCollisionObject **bodies, int numBodies, btPersistentManifold **manifoldPtr, int numManifolds, btTypedConstraint **constraints, int numConstraints, const btContactSolverInfo &infoGlobal, btIDebugDraw *debugDrawer) {
     btScalar leastSquaredResidual = btSequentialImpulseConstraintSolver::solveSingleIteration(iteration, bodies, numBodies, manifoldPtr, numManifolds, constraints, numConstraints, infoGlobal, debugDrawer);

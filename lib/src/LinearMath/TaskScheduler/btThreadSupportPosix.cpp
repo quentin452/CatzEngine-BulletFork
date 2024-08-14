@@ -16,17 +16,15 @@ subject to the following restrictions:
 
 #if BT_THREADSAFE && !defined(_WIN32)
 
-#include "../../LinearMath/btAlignedObjectArray.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../LinearMath/btScalar.h"
-#include "../../LinearMath/btThreads.h"
+#include "LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btMinMax.h"
+#include "LinearMath/btScalar.h"
+#include "LinearMath/btThreads.h"
 #include "btThreadSupportInterface.h"
-
 
 #include <errno.h>
 #include <stdio.h>
 #include <unistd.h>
-
 
 #ifndef _XOPEN_SOURCE
 #define _XOPEN_SOURCE 600 // for definition of pthread_barrier_t, see http://pages.cs.wisc.edu/~travitch/pthreads_primer.html

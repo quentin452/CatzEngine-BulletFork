@@ -14,17 +14,16 @@ subject to the following restrictions:
 */
 
 #include "btCollisionDispatcherMt.h"
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
 
-#include "../../LinearMath/btPoolAllocator.h"
 #include "BulletCollision/BroadphaseCollision/btOverlappingPairCache.h"
 #include "BulletCollision/CollisionDispatch/btCollisionConfiguration.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObject.h"
 #include "BulletCollision/CollisionDispatch/btCollisionObjectWrapper.h"
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
-
+#include "LinearMath/btPoolAllocator.h"
 
 btCollisionDispatcherMt::btCollisionDispatcherMt(btCollisionConfiguration *config, int grainSize)
     : btCollisionDispatcher(config) {

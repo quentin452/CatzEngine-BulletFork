@@ -14,9 +14,8 @@ subject to the following restrictions:
 */
 
 #include "btPersistentManifold.h"
-#include "../../LinearMath/btSerializer.h"
-#include "../../LinearMath/btTransform.h"
-
+#include "LinearMath/btSerializer.h"
+#include "LinearMath/btTransform.h"
 
 #ifdef BT_USE_DOUBLE_PRECISION
 #define btCollisionObjectData btCollisionObjectDoubleData

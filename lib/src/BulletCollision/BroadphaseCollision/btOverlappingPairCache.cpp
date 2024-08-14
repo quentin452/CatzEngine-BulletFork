@@ -15,10 +15,9 @@ subject to the following restrictions:
 
 #include "btOverlappingPairCache.h"
 
-#include "../../LinearMath/btAabbUtil2.h"
+#include "LinearMath/btAabbUtil2.h"
 #include "btCollisionAlgorithm.h"
 #include "btDispatcher.h"
-
 
 #include <stdio.h>
 
@@ -293,7 +292,7 @@ void *btHashedOverlappingPairCache::removeOverlappingPair(btBroadphaseProxy *pro
     return userData;
 }
 // #include <stdio.h>
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 void btHashedOverlappingPairCache::processAllOverlappingPairs(btOverlapCallback *callback, btDispatcher *dispatcher) {
     BT_PROFILE("btHashedOverlappingPairCache::processAllOverlappingPairs");
     int i;

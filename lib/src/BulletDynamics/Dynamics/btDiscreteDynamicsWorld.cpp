@@ -16,14 +16,13 @@ subject to the following restrictions:
 #include "btDiscreteDynamicsWorld.h"
 
 // collision detection
-#include "../../LinearMath/btQuickprof.h"
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletCollision/BroadphaseCollision/btCollisionAlgorithm.h"
 #include "BulletCollision/BroadphaseCollision/btSimpleBroadphase.h"
 #include "BulletCollision/CollisionDispatch/btCollisionDispatcher.h"
 #include "BulletCollision/CollisionDispatch/btSimulationIslandManager.h"
 #include "BulletCollision/CollisionShapes/btCollisionShape.h"
-
+#include "LinearMath/btQuickprof.h"
+#include "LinearMath/btTransformUtil.h"
 
 // rigidbody & constraints
 #include "BulletDynamics/ConstraintSolver/btConeTwistConstraint.h"
@@ -38,16 +37,15 @@ subject to the following restrictions:
 #include "BulletDynamics/ConstraintSolver/btTypedConstraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
 
-
-#include "../../LinearMath/btIDebugDraw.h"
 #include "BulletCollision/CollisionShapes/btSphereShape.h"
+#include "LinearMath/btIDebugDraw.h"
 
-#include "../../LinearMath/btMotionState.h"
-#include "../../LinearMath/btQuickprof.h"
+
 #include "BulletDynamics/Dynamics/btActionInterface.h"
+#include "LinearMath/btMotionState.h"
+#include "LinearMath/btQuickprof.h"
 
-
-#include "../../LinearMath/btSerializer.h"
+#include "LinearMath/btSerializer.h"
 
 #if 0
 btAlignedObjectArray<btVector3> debugContacts;

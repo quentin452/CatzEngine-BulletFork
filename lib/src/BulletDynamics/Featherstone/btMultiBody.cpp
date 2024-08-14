@@ -22,8 +22,8 @@
  */
 
 #include "btMultiBody.h"
-#include "../../LinearMath/btSerializer.h"
-#include "../../LinearMath/btTransformUtil.h"
+#include "LinearMath/btSerializer.h"
+#include "LinearMath/btTransformUtil.h"
 #include "btMultiBodyJointFeedback.h"
 #include "btMultiBodyLink.h"
 #include "btMultiBodyLinkCollider.h"

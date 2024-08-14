@@ -17,12 +17,11 @@ subject to the following restrictions:
 #ifndef _BT_SOFT_BODY_H
 #define _BT_SOFT_BODY_H
 
-#include "../../LinearMath/btAlignedObjectArray.h"
-#include "../../LinearMath/btIDebugDraw.h"
-#include "../../LinearMath/btTransform.h"
-#include "../../LinearMath/btVector3.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
-
+#include "LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btIDebugDraw.h"
+#include "LinearMath/btTransform.h"
+#include "LinearMath/btVector3.h"
 
 #include "BulletCollision/BroadphaseCollision/btDbvt.h"
 #include "BulletCollision/CollisionDispatch/btCollisionCreateFunc.h"

@@ -14,15 +14,14 @@ subject to the following restrictions:
 */
 
 #include "btMultiBodyDynamicsWorld.h"
-#include "../../LinearMath/btIDebugDraw.h"
-#include "../../LinearMath/btQuickprof.h"
-#include "../../LinearMath/btSerializer.h"
 #include "BulletCollision/CollisionDispatch/btSimulationIslandManager.h"
+#include "LinearMath/btIDebugDraw.h"
+#include "LinearMath/btQuickprof.h"
+#include "LinearMath/btSerializer.h"
 #include "btMultiBody.h"
 #include "btMultiBodyConstraint.h"
 #include "btMultiBodyConstraintSolver.h"
 #include "btMultiBodyLinkCollider.h"
-
 
 void btMultiBodyDynamicsWorld::addMultiBody(btMultiBody *body, int group, int mask) {
     m_multiBodies.push_back(body);

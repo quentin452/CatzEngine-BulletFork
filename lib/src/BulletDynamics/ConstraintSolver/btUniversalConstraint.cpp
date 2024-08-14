@@ -14,9 +14,8 @@ subject to the following restrictions:
 */
 
 #include "btUniversalConstraint.h"
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
-
+#include "LinearMath/btTransformUtil.h"
 
 #define UNIV_EPS btScalar(0.01f)
 

@@ -17,10 +17,9 @@ subject to the following restrictions:
 #ifndef BT_MATRIX_X_H
 #define BT_MATRIX_X_H
 
-#include "../../LinearMath/btAlignedObjectArray.h"
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btQuickprof.h"
 #include <stdio.h>
-
 
 // #define BT_DEBUG_OSTREAM
 #ifdef BT_DEBUG_OSTREAM

@@ -14,12 +14,11 @@ subject to the following restrictions:
 */
 
 #include "btHingeConstraint.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#include "LinearMath/btMinMax.h"
+#include "LinearMath/btTransformUtil.h"
 #include "btSolverBody.h"
 #include <new>
-
 
 // #define HINGE_USE_OBSOLETE_SOLVER false
 #define HINGE_USE_OBSOLETE_SOLVER false

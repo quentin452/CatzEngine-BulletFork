@@ -23,20 +23,20 @@ subject to the following restrictions:
 #include "btSequentialImpulseConstraintSolver.h"
 #include "BulletCollision/NarrowPhaseCollision/btPersistentManifold.h"
 
-#include "../../LinearMath/btCpuFeatureUtility.h"
-#include "../../LinearMath/btIDebugDraw.h"
-
+#include "LinearMath/btCpuFeatureUtility.h"
+#include "LinearMath/btIDebugDraw.h"
 
 // #include "btJacobianEntry.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../LinearMath/btQuickprof.h"
-#include "../../LinearMath/btStackAlloc.h"
 #include "BulletDynamics/ConstraintSolver/btTypedConstraint.h"
+#include "LinearMath/btMinMax.h"
+#include "LinearMath/btQuickprof.h"
+#include "LinearMath/btStackAlloc.h"
 #include <new>
+
 
 // #include "btSolverBody.h"
 // #include "btSolverConstraint.h"
-#include "../../LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btAlignedObjectArray.h"
 #include <string.h> //for memset
 
 int gNumSplitImpulseRecoveries = 0;

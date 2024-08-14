@@ -1,11 +1,10 @@
 
-#include "../../LinearMath/btAlignedObjectArray.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../LinearMath/btQuickprof.h"
-#include "../../LinearMath/btThreads.h"
+#include "LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btMinMax.h"
+#include "LinearMath/btQuickprof.h"
+#include "LinearMath/btThreads.h"
 #include <algorithm>
 #include <stdio.h>
-
 
 #if BT_THREADSAFE
 

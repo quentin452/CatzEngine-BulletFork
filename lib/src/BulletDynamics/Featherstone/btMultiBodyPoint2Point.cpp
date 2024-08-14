@@ -16,10 +16,9 @@ subject to the following restrictions:
 /// This file was written by Erwin Coumans
 
 #include "btMultiBodyPoint2Point.h"
-#include "../../LinearMath/btIDebugDraw.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#include "LinearMath/btIDebugDraw.h"
 #include "btMultiBodyLinkCollider.h"
-
 
 #ifndef BTMBP2PCONSTRAINT_BLOCK_ANGULAR_MOTION_TEST
 #define BTMBP2PCONSTRAINT_DIM 3

@@ -16,11 +16,10 @@ subject to the following restrictions:
 /// This file was written by Erwin Coumans
 
 #include "btMultiBodyFixedConstraint.h"
-#include "../../LinearMath/btIDebugDraw.h"
 #include "BulletDynamics/ConstraintSolver/btGeneric6DofSpring2Constraint.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#include "LinearMath/btIDebugDraw.h"
 #include "btMultiBodyLinkCollider.h"
-
 
 #define BTMBFIXEDCONSTRAINT_DIM 6
 

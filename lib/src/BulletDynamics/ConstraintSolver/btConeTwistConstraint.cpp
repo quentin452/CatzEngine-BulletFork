@@ -16,12 +16,11 @@ Written by: Marcus Hennix
 */
 
 #include "btConeTwistConstraint.h"
-#include "../../LinearMath/btMinMax.h"
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#include "LinearMath/btMinMax.h"
+#include "LinearMath/btTransformUtil.h"
 #include <cmath>
 #include <new>
-
 
 // #define CONETWIST_USE_OBSOLETE_SOLVER true
 #define CONETWIST_USE_OBSOLETE_SOLVER false

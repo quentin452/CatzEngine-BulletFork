@@ -14,10 +14,9 @@ subject to the following restrictions:
 */
 
 #include "btFixedConstraint.h"
-#include "../../LinearMath/btTransformUtil.h"
 #include "BulletDynamics/Dynamics/btRigidBody.h"
+#include "LinearMath/btTransformUtil.h"
 #include <new>
-
 
 btFixedConstraint::btFixedConstraint(btRigidBody &rbA, btRigidBody &rbB, const btTransform &frameInA, const btTransform &frameInB)
     : btGeneric6DofSpring2Constraint(rbA, rbB, frameInA, frameInB) {

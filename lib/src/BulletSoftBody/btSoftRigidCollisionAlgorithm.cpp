@@ -22,7 +22,6 @@ subject to the following restrictions:
 #include "BulletSoftBody/btSoftBodySolvers.h"
 #include "btSoftBody.h"
 
-
 /// TODO: include all the shapes that the softbody can collide with
 /// alternatively, implement special case collision algorithms (just like for rigid collision shapes)
 
@@ -46,7 +45,7 @@ btSoftRigidCollisionAlgorithm::~btSoftRigidCollisionAlgorithm() {
     */
 }
 
-#include "../../LinearMath/btQuickprof.h"
+#include "LinearMath/btQuickprof.h"
 #include <stdio.h>
 
 void btSoftRigidCollisionAlgorithm::processCollision(const btCollisionObjectWrapper *body0Wrap, const btCollisionObjectWrapper *body1Wrap, const btDispatcherInfo &dispatchInfo, btManifoldResult *resultOut) {

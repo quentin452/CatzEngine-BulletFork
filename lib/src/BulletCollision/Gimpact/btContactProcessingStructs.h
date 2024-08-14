@@ -24,10 +24,9 @@ subject to the following restrictions:
 3. This notice may not be removed or altered from any source distribution.
 */
 
-#include "../../LinearMath/btAlignedObjectArray.h"
-#include "../../LinearMath/btTransform.h"
+#include "LinearMath/btAlignedObjectArray.h"
+#include "LinearMath/btTransform.h"
 #include "btTriangleShapeEx.h"
-
 
 /**
 Configuration var for applying interpolation of  contact normals
